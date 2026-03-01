@@ -1,0 +1,35 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+*.log
+.DS_Store
+
+# iOS
+ios/OTPPoc/DerivedData/
+ios/OTPPoc/build/
+*.xcuserdata
+*.xcworkspacedata
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+*.apk
+*.aab
+
+# Next.js
+web/.next/
+web/out/
+
+# Docker
+pgdata/
+redisdata/
+
+# IDE
+.vscode/
+.idea/

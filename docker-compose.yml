@@ -1,0 +1,87 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: otppoc-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-otppoc}
+      POSTGRES_USER: ${POSTGRES_USER:-otppoc}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-otppoc_secret_change_me}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/01-init.sql
+      - ./backend/src/db/migrations/001_initial.sql:/docker-entrypoint-initdb.d/02-schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-otppoc}"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - otppoc
+
+  redis:
+    image: redis:7-alpine
+    container_name: otppoc-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./infra/redis/redis.conf:/usr/local/etc/redis/redis.conf
+      - redisdata:/data
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - otppoc
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: otppoc-backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+      - path: .env.local
+        required: false
+    environment:
+      POSTGRES_HOST: postgres
+      REDIS_HOST: redis
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./backend/src:/app/src
+    networks:
+      - otppoc
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: otppoc-web
+    ports:
+      - "3001:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:3000
+      NEXT_PUBLIC_HMAC_KEY: ${HMAC_CLIENT_KEY:-change_me_hmac_client_key_at_least_32_chars_long}
+    depends_on:
+      - backend
+    volumes:
+      - ./web/src:/app/src
+    networks:
+      - otppoc
+
+volumes:
+  pgdata:
+  redisdata:
+
+networks:
+  otppoc:
+    driver: bridge

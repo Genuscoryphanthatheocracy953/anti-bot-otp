@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFDD1222DCC8220C2CF8F18 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1447D18F56A9D83CA1FD50B0 /* PhoneFormatter.swift */; };
+		1A9AA201BD4722CE939E0854 /* AttestationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2A0750B38F4C146C33B2F /* AttestationService.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F3 /* IntegrityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F4 /* IntegrityService.swift */; };
+		28E7A3F3DC308CFA4DA9E22D /* OTPVerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31941D549452DC855756709 /* OTPVerifyView.swift */; };
+		498A2C152D0349D2F03C0B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D853E34694335BCF7CDFCC8 /* ContentView.swift */; };
+		555CDA6F4DB32E4F47C68BCB /* OTPPocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B281063B9BE8B93F05A2B9 /* OTPPocApp.swift */; };
+		761E4FF90F68A49D52F174B6 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E612AA9AC29D714CBB404 /* SessionView.swift */; };
+		7C4F9FA8A432158DC7F280AC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE60D668EC2275D86F441E /* APIClient.swift */; };
+		81C65209637BB20C2C1A7EE8 /* PoWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0015811FC7C41CD8EF42F /* PoWService.swift */; };
+		A628AF603E2912DCF33EB781 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C8FE12A4B3CF4BCBCD29F /* AuthViewModel.swift */; };
+		C1B96E4A65A7F1382057EB49 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A988AF8872DEEFAE2DFC34D /* AuthModels.swift */; };
+		C31845B125DA5DBC5AF15BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D75CC1068665F496753307A /* Assets.xcassets */; };
+		CAA8F33E62DC55C9263F3305 /* HMACSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6338A609C235441284E63 /* HMACSigner.swift */; };
+		D4E5F6A7B8C9D0E1F2A3B4C5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* Theme.swift */; };
+		DD0BFF5B45D20A995139621A /* DeviceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417F3CDD528B2FA33374448 /* DeviceModels.swift */; };
+		E5F6A7B8C9D0E1F2A3B4C5D6 /* StepIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6A7B8C9D0E1F2A3 /* StepIndicator.swift */; };
+		F2108EF505EFB46967A08BF2 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F17A377FA02A406CDF7B7 /* TokenManager.swift */; };
+		F6566392480459146907A680 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480D00114E3CDB067F32878 /* KeychainHelper.swift */; };
+		F6A7B8C9D0E1F2A3B4C5D6E7 /* DefenseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F6A7B8C9D0E1F2A3B4 /* DefenseCard.swift */; };
+		F92D15AA98F05527716298E6 /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C718770380036F51CD604C /* PhoneInputView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1447D18F56A9D83CA1FD50B0 /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
+		265E612AA9AC29D714CBB404 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		2BDE60D668EC2275D86F441E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2D0C8FE12A4B3CF4BCBCD29F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		33D6338A609C235441284E63 /* HMACSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACSigner.swift; sourceTree = "<group>"; };
+		341F17A377FA02A406CDF7B7 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		3E53ADB31150C288AC930F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		420969BA9908195B69852BF6 /* OTPPoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPPoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4417F3CDD528B2FA33374448 /* DeviceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModels.swift; sourceTree = "<group>"; };
+		58C718770380036F51CD604C /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
+		5D853E34694335BCF7CDFCC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68B281063B9BE8B93F05A2B9 /* OTPPocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPocApp.swift; sourceTree = "<group>"; };
+		78A0015811FC7C41CD8EF42F /* PoWService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoWService.swift; sourceTree = "<group>"; };
+		7A988AF8872DEEFAE2DFC34D /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		7D75CC1068665F496753307A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83A2A0750B38F4C146C33B2F /* AttestationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F4 /* IntegrityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrityService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6A7B8C9D0E1F2A3 /* StepIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepIndicator.swift; sourceTree = "<group>"; };
+		C3D4E5F6A7B8C9D0E1F2A3B4 /* DefenseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenseCard.swift; sourceTree = "<group>"; };
+		D480D00114E3CDB067F32878 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		E31941D549452DC855756709 /* OTPVerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		07AC63BDF5FA9C2D3FE35A8B = {
+			isa = PBXGroup;
+			children = (
+				47A3D44728E6A159700F3BD9 /* OTPPoc */,
+				53BE8AD7CD24B074E5799CC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		329F4F5B35A6BC93777D2DD5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83A2A0750B38F4C146C33B2F /* AttestationService.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F4 /* IntegrityService.swift */,
+				78A0015811FC7C41CD8EF42F /* PoWService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4094E49CF81FD893938FDCA8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D480D00114E3CDB067F32878 /* KeychainHelper.swift */,
+				1447D18F56A9D83CA1FD50B0 /* PhoneFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4230571DA543452FC383F893 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2BDE60D668EC2275D86F441E /* APIClient.swift */,
+				33D6338A609C235441284E63 /* HMACSigner.swift */,
+				341F17A377FA02A406CDF7B7 /* TokenManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		47A3D44728E6A159700F3BD9 /* OTPPoc */ = {
+			isa = PBXGroup;
+			children = (
+				7D75CC1068665F496753307A /* Assets.xcassets */,
+				3E53ADB31150C288AC930F9F /* Info.plist */,
+				68B281063B9BE8B93F05A2B9 /* OTPPocApp.swift */,
+				E0F42622D8352D165C48A760 /* Models */,
+				4230571DA543452FC383F893 /* Networking */,
+				329F4F5B35A6BC93777D2DD5 /* Services */,
+				4094E49CF81FD893938FDCA8 /* Utilities */,
+				6E183DC83D3F67130E3F0710 /* ViewModels */,
+				82ACD9BC2F90FA2FBE8272F9 /* Views */,
+			);
+			path = OTPPoc;
+			sourceTree = "<group>";
+		};
+		53BE8AD7CD24B074E5799CC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				420969BA9908195B69852BF6 /* OTPPoc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E183DC83D3F67130E3F0710 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2D0C8FE12A4B3CF4BCBCD29F /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		82ACD9BC2F90FA2FBE8272F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7B8C9D0E1F2A3B4C5D6E7F8 /* Components */,
+				5D853E34694335BCF7CDFCC8 /* ContentView.swift */,
+				E31941D549452DC855756709 /* OTPVerifyView.swift */,
+				58C718770380036F51CD604C /* PhoneInputView.swift */,
+				265E612AA9AC29D714CBB404 /* SessionView.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* Theme.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7B8C9D0E1F2A3B4C5D6E7F8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C3D4E5F6A7B8C9D0E1F2A3B4 /* DefenseCard.swift */,
+				B2C3D4E5F6A7B8C9D0E1F2A3 /* StepIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E0F42622D8352D165C48A760 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A988AF8872DEEFAE2DFC34D /* AuthModels.swift */,
+				4417F3CDD528B2FA33374448 /* DeviceModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A6E9A856BE2895500EB0E2A /* OTPPoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EBC1ECF0A1FCDEC5728E6B5 /* Build configuration list for PBXNativeTarget "OTPPoc" */;
+			buildPhases = (
+				87E3B12784C9E7068FB53457 /* Sources */,
+				95ED172D6A3CC7FEA0F9EA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTPPoc;
+			packageProductDependencies = (
+			);
+			productName = OTPPoc;
+			productReference = 420969BA9908195B69852BF6 /* OTPPoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72C0660D496967BF12E5F566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = ABBA052C6BF7F68825E8A3A1 /* Build configuration list for PBXProject "OTPPoc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 07AC63BDF5FA9C2D3FE35A8B;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A6E9A856BE2895500EB0E2A /* OTPPoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95ED172D6A3CC7FEA0F9EA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31845B125DA5DBC5AF15BD4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87E3B12784C9E7068FB53457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4F9FA8A432158DC7F280AC /* APIClient.swift in Sources */,
+				1A9AA201BD4722CE939E0854 /* AttestationService.swift in Sources */,
+				C1B96E4A65A7F1382057EB49 /* AuthModels.swift in Sources */,
+				A628AF603E2912DCF33EB781 /* AuthViewModel.swift in Sources */,
+				498A2C152D0349D2F03C0B2F /* ContentView.swift in Sources */,
+				DD0BFF5B45D20A995139621A /* DeviceModels.swift in Sources */,
+				CAA8F33E62DC55C9263F3305 /* HMACSigner.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F3 /* IntegrityService.swift in Sources */,
+				F6566392480459146907A680 /* KeychainHelper.swift in Sources */,
+				555CDA6F4DB32E4F47C68BCB /* OTPPocApp.swift in Sources */,
+				28E7A3F3DC308CFA4DA9E22D /* OTPVerifyView.swift in Sources */,
+				0EFDD1222DCC8220C2CF8F18 /* PhoneFormatter.swift in Sources */,
+				F92D15AA98F05527716298E6 /* PhoneInputView.swift in Sources */,
+				81C65209637BB20C2C1A7EE8 /* PoWService.swift in Sources */,
+				761E4FF90F68A49D52F174B6 /* SessionView.swift in Sources */,
+				F2108EF505EFB46967A08BF2 /* TokenManager.swift in Sources */,
+				D4E5F6A7B8C9D0E1F2A3B4C5 /* Theme.swift in Sources */,
+				E5F6A7B8C9D0E1F2A3B4C5D6 /* StepIndicator.swift in Sources */,
+				F6A7B8C9D0E1F2A3B4C5D6E7 /* DefenseCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20D9FF7E906632C8DF1ECBBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8AB71A82BBD042A4FC733128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MM7V8HKXB;
+				INFOPLIST_FILE = OTPPoc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otppoc.OTPPoc;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A82E991D20664AED62DF3C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B5A3C67DDA01E8127807A450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MM7V8HKXB;
+				INFOPLIST_FILE = OTPPoc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.otppoc.OTPPoc;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EBC1ECF0A1FCDEC5728E6B5 /* Build configuration list for PBXNativeTarget "OTPPoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3C67DDA01E8127807A450 /* Debug */,
+				8AB71A82BBD042A4FC733128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ABBA052C6BF7F68825E8A3A1 /* Build configuration list for PBXProject "OTPPoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D9FF7E906632C8DF1ECBBC /* Debug */,
+				A82E991D20664AED62DF3C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72C0660D496967BF12E5F566 /* Project object */;
+}
