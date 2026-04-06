@@ -1,5 +1,8 @@
 # OTP Authentication PoC — Layered Anti-Bot Defenses
 
+![License](https://img.shields.io/github/license/AnasAlmomany/anti-bot-otp)
+![Last Commit](https://img.shields.io/github/last-commit/AnasAlmomany/anti-bot-otp)
+
 A full-stack Proof-of-Concept implementing **end-to-end OTP authentication** with **11 server-enforced anti-bot defense layers**. Built with a Fastify backend, Next.js web frontend, native iOS (SwiftUI) app, native Android (Kotlin + Jetpack Compose) app, and cross-platform Flutter app — all working against a shared API with HMAC-signed requests, adaptive risk scoring, and proof-of-work challenges.
 
 > Every defense layer is enforced server-side. Client implementations demonstrate how legitimate apps integrate with the security infrastructure.
