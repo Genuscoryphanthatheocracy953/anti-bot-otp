@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.swift text diff=swift
+*.kt text diff=kotlin
+*.dart text diff=dart
+*.png binary
+*.jpg binary
+*.ico binary
