@@ -258,7 +258,7 @@ npm install
 npm run dev  # Starts on :3000 with hot reload
 ```
 
-### Web
+### Web (Next.js)
 
 ```bash
 cd web
@@ -266,21 +266,63 @@ npm install
 npm run dev  # Starts on :3001
 ```
 
-### Android
+Open [http://localhost:3001](http://localhost:3001) — the web client connects to the backend at `http://localhost:3000` by default. No additional configuration needed.
+
+### iOS (SwiftUI)
+
+Requires **Xcode 16+** with iOS 17+ Simulator.
 
 ```bash
-cd android
-./gradlew assembleDebug   # Build debug APK
-./gradlew installDebug    # Install on connected emulator/device
+# Option A: Xcode GUI
+open ios/OTPPoc/OTPPoc.xcodeproj
+# Select a simulator (e.g. iPhone 16) → Run (⌘R)
+
+# Option B: Command line
+make build-ios
+# Or: xcodebuild -project ios/OTPPoc/OTPPoc.xcodeproj -scheme OTPPoc \
+#   -destination 'platform=iOS Simulator,name=iPhone 16' build
 ```
 
-### Flutter
+The iOS simulator connects to `http://localhost:3000` directly (no special config needed).
+
+### Android (Kotlin + Jetpack Compose)
+
+Requires **Android Studio** with an emulator AVD (API 26+).
+
+```bash
+# 1. Start an Android emulator
+emulator -avd Pixel_6_API_33  # or use Android Studio AVD Manager
+
+# 2. Build and install
+cd android
+./gradlew assembleDebug       # Build debug APK (~16MB)
+./gradlew installDebug        # Install on running emulator
+
+# 3. Launch
+adb shell am start -n com.otppoc.android/.MainActivity
+```
+
+The Android emulator uses `http://10.0.2.2:3000` to reach the host machine's backend (configured in `ApiClient.kt`).
+
+### Flutter (iOS + Android)
+
+Requires **Flutter SDK 3.6+** (`flutter --version` to verify).
 
 ```bash
 cd flutter
-flutter pub get
-flutter run  # Pick your target device
+flutter pub get               # Install dependencies
+
+# List available devices
+flutter devices
+
+# Run on a specific target
+flutter run -d "iPhone 16"          # iOS Simulator
+flutter run -d emulator-5554        # Android Emulator
+flutter run -d chrome                # Web (debug only)
 ```
+
+- **iOS Simulator**: connects to `http://localhost:3000`
+- **Android Emulator**: connects to `http://10.0.2.2:3000` (auto-detected in `api_client.dart`)
 
 ---
 
